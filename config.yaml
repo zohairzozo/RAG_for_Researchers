@@ -1,0 +1,17 @@
+app:
+  name: Research RAG MVP
+
+paths:
+  data_dir: data
+  upload_dir: data/uploads
+  raw_papers_dir: data/raw_papers
+  processed_dir: data/processed
+  vector_store_dir: data/vector_store
+  sqlite_path: data/research_rag.sqlite3
+
+rag:
+  collection_name: research_papers
+  embedding_model: sentence-transformers/all-MiniLM-L6-v2
+  chunk_size_words: 280
+  chunk_overlap_words: 60
+  top_k: 6
